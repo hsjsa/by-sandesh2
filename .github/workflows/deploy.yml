@@ -9,12 +9,10 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          heroku_api_key: 7ecfb49d-4112-46f8-9c7c-a3b17d8218fc
+          heroku_app_name: no3bot
+          heroku_email: root9878+1@protonmail.com
           usedocker: true
           docker_heroku_process_type: web
           stack: "container"
-          region: "us"
-        env:
-          HD_CONFIG_FILE_URL: ${{secrets.CONFIG_FILE_URL}}
+          region: "eu"
